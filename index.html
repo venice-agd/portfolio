@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleesah Dagdagan | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<div id="galleryModal" class="gallery-modal">
+    <span class="close-gallery" onclick="closeGallery()">&times;</span>
+    <button class="gallery-arrow left" onclick="prevImage()">
+        &#10094;
+    </button>
+    <img id="galleryImage">
+    <button class="gallery-arrow right" onclick="nextImage()">
+        &#10095;
+    </button>
+</div>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="logo">
+                <span class="dot"></span>
+                <span class="first-name">Aleesah</span>
+                <span class="last-name">.Dagdagan</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+    </header>
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>
+                Aleesah Venice G.<br>
+                <span>Dagdagan</span>
+            </h1>
+            <h2>BSIT - Animation & Game Development Student</h2>
+
+            <p>
+                I'm a first-year BSIT-AGD student at FEU Institute of Technology.
+                I enjoy creating websites, learning programming, and exploring UI/UX
+                design.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <!-- Replace with your own picture -->
+            <img src="images/dagdagan.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Who am I?</h3>
+
+                <p>
+                    Hi! I'm Aleesah Venice G. Dagdagan, currently a first-year
+                    Bachelor of Science in Information Technology major in
+                    Animation and Game Development at FEU Institute of Technology.
+                </p>
+
+                <p>
+                    I enjoy learning different areas of technology, especially
+                    web development, UI/UX design, and programming.
+                    Outside academics, I like watching movies, listening to music,
+                    and other artistic hobbies.
+                </p>
+
+                <p>
+                    My goal is to become a skilled IT professional who can create
+                    websites, applications, and interactive experiences that are
+                    both useful and visually appealing.
+                </p>
+
+            </div>
+
+            <div class="skills-card">
+                <div class="skills">
+                    <h3>Skills</h3>
+
+                    <div class="skill-box">HTML</div>
+                    <div class="skill-box">CSS</div>
+                    <div class="skill-box">JavaScript</div>
+                    <div class="skill-box">C++</div>
+                    <div class="skill-box">Figma</div>
+                    <div class="skill-box">Microsoft Office</div>
+                    <div class="skill-box">Adobe Photoshop</div>
+                    <div class="skill-box">Arduino</div>
+                    <div class="skill-box">Shapr3D</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+            Academic Projects
+        </h2>
+
+        <p class="section-description">
+            A collection of websites and projects I've built during my first year as an IT student while learning web
+            development and design.
+        </p>
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+
+            <div class="project-card">
+                <div class="project-content">
+
+                    <h3>Project SEKAI Fan Website</h3>
+
+                    <p>
+                        A responsive fan website inspired by Project SEKAI, created using HTML, CSS, and JavaScript. It
+                        features multiple pages, character information, image galleries, and an organized layout while
+                        focusing on responsive web design and user experience.
+                    </p>
+
+                    <div class="project-footer">
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="https://pjsk.rf.gd/index.html" target="_blank" class="visit-btn">
+                                🌐 Visit Website
+                            </a>
+
+                            <button class="gallery-btn" onclick="openGallery([
+                            'images/pj_home.png',
+                            'images/c_ln.png',
+                            'images/c_ww.png',
+                            'images/gp_1.png',
+                            'images/gp_2.png',
+                            'images/pj_about1.png',
+                            'images/pj_about2.png'
+                        ])">
+
+                                🖼 Gallery
+                                <span class="gallery-count">7</span>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Top 10 Favorites Website</h3>
+
+                    <p>
+                        A responsive multi-page website built using HTML and CSS that showcases my favorite anime
+                        series.
+                    </p>
+
+                    <div class="project-footer">
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://topanime.infinityfree.io/index.html?i=1" target="_blank" class="visit-btn">
+
+                                🌐 Visit Website
+
+                            </a>
+
+                            <button class="gallery-btn" onclick="openGallery([
+                            'images/p1_home.png',
+                            'images/p1_darkhome.png',
+                            'images/anime1_sample.png',
+                            'images/anime_about.png'
+                        ])">
+
+                                🖼 Gallery
+                                <span class="gallery-count">4</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Recomed</h3>
+
+                    <p>
+                        My first UI/UX website prototype created in Figma during Grade 11. Recomed is a sample concept
+                        for a digital healthcare platform.
+                    </p>
+
+                    <div class="project-footer">
+                        <div class="project-tags">
+
+                            <span>Figma</span>
+                            <span>UI Design</span>
+
+                        </div>
+
+                        <button class="gallery-btn" onclick="openGallery([
+                        'images/r_home.png',
+                        'images/r_signup.png',
+                        'images/r_.png'
+                    ])">
+
+                            🖼 Gallery
+                            <span class="gallery-count">3</span>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Interactive CV Website</h3>
+
+                    <p>
+                        A one-page curriculum vitae website created using HTML, CSS, and JavaScript with a Light/Dark
+                        mode.
+                    </p>
+
+                    <div class="project-footer">
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <button class="gallery-btn" onclick="openGallery([
+                        'images/cv_d.png',
+                        'images/cv_l.png'
+                    ])">
+
+                            🖼 Gallery
+                            <span class="gallery-count">2</span>
+
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <h2 class="section-title">Education</h2>
+        <p class="section-description">
+            My academic journey as an Information Technology student.
+        </p>
+
+        <div class="timeline">
+
+            <!-- FEU -->
+
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    2025 – Present
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>FEU Institute of Technology</h3>
+                    <p>
+                        Bachelor of Science in Information Technology
+                    </p>
+                    <p>
+                        Major in Animation and Game Development (BSIT-AGD)
+                    </p>
+                </div>
+            </div>
+
+            <!-- NU -->
+
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    2023 – 2025
+                </div>
+
+                <div class="timeline-content">
+                    <h3>National University Fairview</h3>
+                    <p>
+                        Science, Technology, Engineering, and Mathematics (STEM)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Future -->
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    Next Goal
+                </div>
+                <div class="timeline-content">
+                    <h3>Future Experience</h3>
+                    <p>
+                        Looking forward to internships, certifications, and building more web development, animation,
+                        and game development projects throughout college.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+        <p class="section-description">
+            Feel free to reach out if you have any questions or would like to connect.
+        </p>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <a href="mailto:agdagdagan@fit.edu.ph">
+                    agdagdagan@fit.edu.ph
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <a href="tel:+639267083222">
+                    0926 708 3222
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+
+                <a href="https://github.com/venice-agd" target="_blank">
+                    github.com/venice-agd
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Location</h3>
+                <p>Quezon City, Philippines</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>
+            © 2026 Aleesah Venice G. Dagdagan | Personal Portfolio
+        </p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
